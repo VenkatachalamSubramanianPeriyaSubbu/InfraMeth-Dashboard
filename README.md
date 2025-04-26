@@ -9,7 +9,7 @@ The goal is to support environmental monitoring, infrastructure risk assessment,
 ---
 
 ## Demo
-🚀 **Live Demo**: [Coming soon / or your AWS link]
+🚀 **Live Demo**: [Coming soon]
 
 ---
 
@@ -35,5 +35,5 @@ The goal is to support environmental monitoring, infrastructure risk assessment,
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/VenkatachalamSubramanianPeriyaSubbu/InfraMeth-Dashboard
    cd your-repo
