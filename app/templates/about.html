@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Chicago Infrastructure and Emissions Map</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 40px;
+            color: #343a40;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .emission { background-color: #ffcccc; }
+        .facility { background-color: #ffd700; }
+        .powerplant { background-color: #dda0dd; }
+        .pipeline { background-color: #40e0d0; }
+        .school { background-color: #d3d3d3; }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .box {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About This Project</h1>
+
+    <div class="box">
+        <h2>Project Overview</h2>
+        <p>
+            This project visualizes methane emissions alongside critical infrastructure in the Chicago metropolitan area, 
+            using GIS (Geographic Information Systems) technologies. 
+            By integrating geospatial data from multiple public sources, the interactive map provides insights into the proximity 
+            of emissions to schools, pipelines, power plants, and industrial facilities. 
+            The goal is to enable environmental monitoring, infrastructure risk analysis, and informed urban planning.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Data Sources</h2>
+        <ul>
+            <li class="emission">
+                <strong>Emissions Data:</strong> <a href="https://www.edf.org/climate/methane-leak-map" target="_blank">
+                EDF Methane LeakMap (Environmental Defense Fund)</a> – Methane City Data
+            </li>
+            <li class="facility">
+                <strong>Facilities (Industrial Sites):</strong> <a href="https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files" target="_blank">
+                EPA TRI Facilities for Chicago</a>
+            </li>
+            <li class="powerplant">
+                <strong>Power Plants:</strong> <a href="https://hub.arcgis.com/datasets/arcgis-content::power-plants-in-the-u-s-/about" target="_blank">
+                ArcGIS Hub – Power Plants in the U.S.</a>
+            </li>
+            <li class="pipeline">
+                <strong>Pipelines:</strong> <a href="https://atlas.eia.gov/datasets/eia::natural-gas-interstate-and-intrastate-pipelines/about" target="_blank">
+                U.S. Energy Information Administration – Natural Gas Pipelines</a>
+            </li>
+            <li class="school">
+                <strong>School Districts:</strong> <a href="https://hub.arcgis.com/datasets/arcgis-content::school-district-boundaries/about" target="_blank">
+                ArcGIS Hub – School District Boundaries</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>GIS Tools</strong> – GeoPandas, Folium, Shapely for geospatial data analysis and visualization</li>
+            <li><strong>Flask</strong> – Lightweight web framework for app deployment</li>
+            <li><strong>Docker</strong> – Containerization for scalable cloud deployment</li>
+            <li><strong>AWS Fargate</strong> – Serverless compute for hosting the application</li>
+            <li><strong>GIS Concepts</strong> – Spatial joins, coordinate projections, interactive mapping</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>GitHub Repository</h2>
+        <p>View the full source code on <a href="https://github.com/yourusername/your-repo" target="_blank">GitHub</a>.</p>
+    </div>
+
+</body>
+</html>
